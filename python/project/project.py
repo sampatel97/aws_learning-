@@ -12,11 +12,11 @@
 
 from __future__ import print_function
 
-hostname = 'localhost'
-username = 'postgres'
-password = 'Eng@22NeverGiveUp'
-database = 'postgres'
-portNumber = '5432'
+hostname = 'hostname'
+username = 'username'
+password = 'password'
+database = 'database name'
+portNumber = 'port number'
 
 import psycopg2
 import psycopg2.extras as extras
@@ -101,9 +101,9 @@ myConnection.commit()
 
 # psycopg2
 engine = create_engine("postgresql+psycopg2://{user}:{pw}@localhost/{db}"
-                       .format(user="postgres",
-                               pw="Eng%4022NeverGiveUp",
-                               db="postgres"))
+                       .format(user="username",
+                               pw="password",
+                               db="database name"))
 # Insert whole DataFrame into MySQL
 new_df.to_sql('tran_fact', con = engine,schema = 'cards_ingest' ,if_exists = 'append', index=False)
 
