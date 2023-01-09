@@ -1,0 +1,5 @@
+tran_date,state_cd,population_cnt,potential_customer_cnt,count_per_date,num_of_target_customer,remaining_potential_cost,rnk
+2022-01-01,CA,500,200,2,498,990,2
+2022-01-05,TX,400,300,3,397,1485,2
+2022-02-03,NY,200,100,1,199,495,2
+2022-02-05,TX,400,300,1,399,1495,2
